@@ -1,6 +1,9 @@
 # depslib dependency file v1.0
-1514140574 source:c:\users\van philip panugan\documents\cpp projects\cpe104l-b15-project_g1\main.cpp
+1562131030 source:c:\users\van philip panugan\documents\cpp projects\cpe104l-b15-project_g1\main.cpp
 	<iostream>
+	<stdio.h>
+	"playerNode.h"
+	"playerList.h"
 
 1561610877 source:c:\users\van philip panugan\documents\cpp projects\cpe104l-b15-project_g1\src\scorelist.cpp
 	"ScoreList.h"
@@ -9,4 +12,19 @@
 	<iostream>
 	<fstream>
 	<string>
+
+1562131127 c:\users\van philip panugan\documents\cpp projects\cpe104l-b15-project_g1\include\playernode.h
+	<iostream>
+	<stdio.h>
+	<string>
+
+1562130513 c:\users\van philip panugan\documents\cpp projects\cpe104l-b15-project_g1\include\playerlist.h
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string>
+	"playerNode.h"
+
+1562131104 source:c:\users\van philip panugan\documents\cpp projects\cpe104l-b15-project_g1\src\playerlist.cpp
+	"playerList.h"
 
