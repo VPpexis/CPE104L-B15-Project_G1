@@ -28,7 +28,7 @@ class playerList{
         void sort();
 
         //insert a new Playernode to the scoreboard.
-        void insert();
+        void insert(playerNode *n);
 
         //remove a playerNode from the list.
         void remove(playerNode *n);

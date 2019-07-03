@@ -8,6 +8,10 @@
 class playerNode
 {
     public:
+        //poiters.
+        playerNode *frontLink;
+        playerNode *backLink;
+
         //constructor.
         playerNode(){
             userName = "Guest";
@@ -76,9 +80,6 @@ class playerNode
         std::string email;
         std::string password;
         int score;
-
-        playerNode *frontLink;
-        playerNode *backLink;
 };
 
 #endif // PLAYERNODE_H

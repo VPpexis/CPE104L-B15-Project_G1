@@ -11,7 +11,9 @@ int main(){
 
     playerList pl;
 
-    pl.print(&n);
+    //pl.print(&n);
+
+    pl.importData("data.txt");
 
 	return 0;
 }

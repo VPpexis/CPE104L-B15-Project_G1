@@ -7,6 +7,30 @@ playerList::playerList(){
 
 //imports the data from file to program.
 void playerList::importData(std::string n){
+    std::ifstream ifs;
+    char x[50];
+    std::string x;
+    playerNode *temp= 0;
+    ifs.open(n);
+
+    if(ifs.is_open()){
+        while(!ifs.eof()){
+            temp = new playerNode;
+
+            ifs.getline(x, 50, ';');
+            temp->setUserName(x);
+            ifs.getline(x, 50, ';');
+            temp->setFirstName(x);
+            ifs.getline(x, 50, ';');
+            temp->setLastName(x);
+            ifs.getline()
+
+            insert(temp);
+        }
+
+    }else{
+        cout << "No file " << n << " exist." << std::endl;
+    }
 
 }
 
@@ -26,7 +50,17 @@ void playerList::print(playerNode *n){
 
 //prints all the playerNode in the linkedlist.
 void playerList::printAll(){
+    playerNode *temp = 0;
+    temp = head;
 
+    if(head!=0){
+        while(temp!=0){
+            print(temp);
+            temp = temp->backLink;
+        }
+    }else{
+        std::cout << "Playerlist contains no data." << std::endl;
+    }
 }
 
 //sorts the playerNode from highest to lowest.
@@ -35,7 +69,7 @@ void playerList::sort(){
 }
 
 //insert a new Playernode to the scoreboard.
-void playerList::insert(){
+void playerList::insert(playerNode *n){
 
 }
 
