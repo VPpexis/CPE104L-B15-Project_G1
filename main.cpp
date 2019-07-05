@@ -14,6 +14,7 @@ int main(){
     //pl.print(&n);
 
     pl.importData("data.txt");
+    pl.printAll();
 
 	return 0;
 }

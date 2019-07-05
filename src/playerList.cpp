@@ -9,13 +9,14 @@ playerList::playerList(){
 void playerList::importData(std::string n){
     std::ifstream ifs;
     char x[50];
-    std::string x;
     playerNode *temp= 0;
     ifs.open(n);
 
     if(ifs.is_open()){
         while(!ifs.eof()){
             temp = new playerNode;
+            temp->backLink = 0;
+            temp->frontLink = 0;
 
             ifs.getline(x, 50, ';');
             temp->setUserName(x);
@@ -23,15 +24,18 @@ void playerList::importData(std::string n){
             temp->setFirstName(x);
             ifs.getline(x, 50, ';');
             temp->setLastName(x);
-            ifs.getline()
+            ifs.getline(x, 50, ';');
+            temp->setEmail(x);
+            ifs.getline(x, 50, ';');
+            temp->setPassword(x);
+            ifs.getline(x, 50);
+            temp->setScore(atoi(x));
 
             insert(temp);
         }
-
     }else{
-        cout << "No file " << n << " exist." << std::endl;
+        std::cout << "No file " << n << " exist." << std::endl;
     }
-
 }
 
 //exports the data from program to file.
@@ -45,7 +49,8 @@ void playerList::print(playerNode *n){
               << "Last Name: "  << n->getLastName() << std::endl
               << "Email: " << n->getEmail() << std::endl
               << "User: " << n->getUserName() << std::endl
-              << "Password: " << n->getPassword() << "\n\n";
+              << "Password: " << n->getPassword() << std::endl
+              << "Score: " << n->getScore() << "\n\n";
 }
 
 //prints all the playerNode in the linkedlist.
@@ -70,6 +75,13 @@ void playerList::sort(){
 
 //insert a new Playernode to the scoreboard.
 void playerList::insert(playerNode *n){
+    if(head == 0){
+        head = n;
+    }else{
+        n->backLink = head;
+        head->frontLink = n;
+        head = n;
+    }
 
 }
 
@@ -80,11 +92,22 @@ void playerList::remove(playerNode *n){
 
 //remove all playerNode in the list.
 void playerList::removeAll(){
-
+    playerNode *temp = head;
+    if(head->frontLink == 0){
+        delete head;
+    }else{
+        while(temp->frontLink != 0){
+            temp = temp->backLink;
+        }
+        while(head != 0){
+            delete temp->backLink;
+            temp = temp->frontLink;
+        }
+    }
 }
 
 
 playerList::~playerList()
 {
-    //dtor
+    removeAll();
 }

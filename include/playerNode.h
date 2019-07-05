@@ -62,7 +62,6 @@ class playerNode
 
         //compare this to another playerNode.
         bool compareTo(playerNode *n){
-            bool decision;
 
             if(this->getFirstName() == n->getFirstName() &&
                this->getLastName() == n->getLastName() &&
