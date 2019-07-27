@@ -1,20 +1,11 @@
-#include <iostream>
-#include <stdio.h>
+#include "include/mainwindow.h"
+#include <QApplication>
 
-#include "playerNode.h"
-#include "playerList.h"
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
 
-using namespace std;
-
-int main(){
-    playerNode n;
-
-    playerList pl;
-
-    //pl.print(&n);
-
-    pl.importData("data.txt");
-    pl.printAll();
-
-	return 0;
+    return a.exec();
 }
