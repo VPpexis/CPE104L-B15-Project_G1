@@ -1,0 +1,23 @@
+﻿  playerList.cpp
+C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\TicTacToe\playerNode.h(62): warning C4251: 'playerNode::userName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'playerNode'
+  D:\Program Files\Visual Studio 2019 Professional\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\TicTacToe\playerNode.h(63): warning C4251: 'playerNode::firstName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'playerNode'
+  D:\Program Files\Visual Studio 2019 Professional\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\TicTacToe\playerNode.h(64): warning C4251: 'playerNode::lastName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'playerNode'
+  D:\Program Files\Visual Studio 2019 Professional\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\TicTacToe\playerNode.h(65): warning C4251: 'playerNode::email': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'playerNode'
+  D:\Program Files\Visual Studio 2019 Professional\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\TicTacToe\playerNode.h(66): warning C4251: 'playerNode::password': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'playerNode'
+  D:\Program Files\Visual Studio 2019 Professional\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\TicTacToe\playerList.h(49): warning C4251: 'playerList::headList': class 'std::list<playerNode,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'playerList'
+          with
+          [
+              _Ty=playerNode
+          ]
+  C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\TicTacToe\playerList.h(49): note: see declaration of 'std::list<playerNode,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=playerNode
+          ]
+     Creating library C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\Debug\TicTacToe.lib and object C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\Debug\TicTacToe.exp
+  TicTacToe.vcxproj -> C:\Users\Van Philip Panugan\Documents\Cpp Projects\CPE104L-B15-Project_G1\dependencies\TicTacToe\Debug\TicTacToe.dll

@@ -34,9 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/ScoreList.h" />
+		<Unit filename="include/playerList.h" />
+		<Unit filename="include/playerNode.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/ScoreList.cpp" />
+		<Unit filename="src/playerList.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
