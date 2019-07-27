@@ -10,7 +10,7 @@
 
 playerList::playerList()
 {
-	headList.clear;
+	//headList.clear;
 }
 
 void playerList::importData(std::string n)
@@ -50,6 +50,7 @@ void playerList::exportData()
 const playerNode& playerList::print(playerNode& n)
 {
 	//Code should return a playernode to be printed in the gui.
+	return n;
 }
 
 void playerList::sort()

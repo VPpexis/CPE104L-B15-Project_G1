@@ -41,7 +41,7 @@ public:
 	void removeAll();
 
 	//Overloads the operator '<' for the playerNode.
-	bool operator <(playerNode& n1, playerNode& n2);
+	//bool operator <(playerNode& n1, playerNode& n2);
 
 	//deconstructor.
 	virtual ~playerList();
