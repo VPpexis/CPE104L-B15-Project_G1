@@ -8,9 +8,9 @@ In order to win the game, one of the players must complete 3 consecutive boxes c
 The Leaderboard will display the top ten contenders that has the highest number of wins in the game.
 
 
-# Requirements for running program
+# Requirements for running program.
 - Qt(Latest Version) compiler with gcc installed.
 
-# Running Program.
+# Running the program.
 - Delete tictactoe.pro.user
 - Run tictactoe.pro through qt
