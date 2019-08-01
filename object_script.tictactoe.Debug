@@ -1,0 +1,10 @@
+debug/main.o
+debug/logindialog.o
+debug/mainwindow.o
+debug/playerList.o
+debug/scoreboarddialog.o
+debug/signupdialog.o
+debug/moc_mainwindow.o
+debug/moc_logindialog.o
+debug/moc_scoreboarddialog.o
+debug/moc_signupdialog.o

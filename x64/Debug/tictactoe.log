@@ -1,0 +1,16 @@
+﻿  Generate moc_predefs.h
+  Uic'ing logindialog.ui...
+  Uic'ing mainwindow.ui...
+  Moc'ing logindialog.h...
+  Moc'ing mainwindow.h...
+  logindialog.cpp
+  main.cpp
+  mainwindow.cpp
+  playerList.cpp
+  moc_logindialog.cpp
+  moc_mainwindow.cpp
+C:\Users\Van Philip Panugan\Desktop\tictactoe-master\playerList.cpp(29): warning C4715: 'playerList::check': not all control paths return a value
+C:\Users\Van Philip Panugan\Desktop\tictactoe-master\mainwindow.cpp(133): warning C4715: 'chmv': not all control paths return a value
+moc_mainwindow.obj : error LNK2019: unresolved external symbol "private: void __cdecl MainWindow::on_radioButton_3_clicked(void)" (?on_radioButton_3_clicked@MainWindow@@AEAAXXZ) referenced in function "private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)" (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z)
+moc_mainwindow.obj : error LNK2019: unresolved external symbol "private: void __cdecl MainWindow::on_radioButton_4_clicked(void)" (?on_radioButton_4_clicked@MainWindow@@AEAAXXZ) referenced in function "private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)" (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z)
+debug\\tictactoe.exe : fatal error LNK1120: 2 unresolved externals

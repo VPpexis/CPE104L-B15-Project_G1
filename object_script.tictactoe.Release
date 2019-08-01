@@ -1,0 +1,10 @@
+release/main.o
+release/logindialog.o
+release/mainwindow.o
+release/playerList.o
+release/scoreboarddialog.o
+release/signupdialog.o
+release/moc_mainwindow.o
+release/moc_logindialog.o
+release/moc_scoreboarddialog.o
+release/moc_signupdialog.o
